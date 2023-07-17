@@ -1,3 +1,120 @@
-body{
-    background-color: tomato;
+/* common share styles and links  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+/* nav related styles  */
+
+nav{
+    padding:3vw 8vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    align-items: center;
+    color: #3A3A3A;
+    font-weight: 700;
+    background-color:rgba(255, 160, 122, 0.205);
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2vw;
+}
+ul > li{
+    list-style-type:none;
+    font-size: 1vw;
+    font-weight: 600;
+}
+ul a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+ul a:hover, i:hover{
+    color:tomato;
+    cursor: pointer;
+}
+
+
+
+
+
+/* banner related styles  */
+.banner-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:3vw 8vw;
+    gap: 20%;
+}
+.banner-container div{
+    width: 40%;
+}
+.banner-photo{
+   background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner-photo img{
+    width: 80%;
+}
+.banner-title{
+    color: #3A3A3A;
+    font-size: 3vw;
+    font-weight: 700;
+}
+.banner-description{
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+    padding:0.5vw 0 ;
+    margin: 0.5vw 0;
+}
+.btn-banner{
+    color: #FFF;
+    font-size: 1vw;
+    font-weight: 700;
+    border-radius: 2.5vw;
+    background: #E02C6D;
+    padding: 0.5vw 1.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+/* media query styles  */
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* padding: 1rem 0.3rem; */
+        gap: 1rem;
+    }
+    ul{
+        justify-content: center;
+        /* gap: 0.8rem; */
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+
+    .banner-container{
+        /* padding: 2rem 0.3rem; */
+        text-align: center;
+    }
 }
